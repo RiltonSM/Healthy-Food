@@ -1,0 +1,91 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+#home-container, #register-container {
+    background: #FFFFFF url("../../assets/img/Illustration.svg") no-repeat 100% 0%;
+    background-size: 55%;
+}
+
+.input-custom {
+    margin-bottom: 1rem;
+}
+
+.slick-list {
+    padding: 0 0 0 7%;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.register-form {
+    width: 20.4375rem;
+}
+
+/* Large */
+@media (max-width: 1300px) and (min-width: 992px) {
+    html, body, #root {
+        font-size: 15px;
+    }
+
+    .slick-list {
+        padding: 0 0 0 7.5%;
+    }
+}
+
+/* Medium */
+@media (max-width: 992px) and (min-width: 768px) {
+    html, body, #root {
+        font-size: 14px;
+    }
+
+    .slick-list {
+        padding: 0 0 0 12%;
+    }
+}
+
+/* Small */
+@media (max-width: 768px) and  (min-width: 615px){
+    html, body, #root{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px){
+    #home-container, #register-container {
+        background: none;
+    }
+
+    .register-form {
+        width: 30.4375rem;
+    }
+}
+
+/* Extra small */
+@media (max-width: 615px) {
+    html, body, #root{
+        font-size: 10px;
+    }
+
+    .register-form {
+        width: 100%;
+    }
+
+    .slick-list {
+        padding: 0 0 0 35%;
+    }
+}
+
